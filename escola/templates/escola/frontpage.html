@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Escola</title>
+        <link rel="stylesheet" href="../../../static/frontpage/style.css">
+        <script src="../../../static/frontpage/theme.js"></script>
+        <link rel="icon" href="../../../static/frontpage/open-book.svg" type="icon">
+        <script src="../../../static/frontpage/theme.js"></script>
+        
+        {% block responsive %}
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="../../../static/frontpage/responsive.css">
+        {% endblock %}
+    
+        {% block blockbots %}<meta name="robots" content="NONE,NOARCHIVE">{% endblock %} 
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container header-content">
+                <div class="logo">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                    </svg>
+                    <h1>Escola Novo Saber</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="login-btn" id="loginButton">Portal do Aluno</a>
+            </div>
+        </header>
+    
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h2>Educação Transformadora</h2>
+                <p>Na Escola Novo Saber, acreditamos no potencial infinito de cada estudante. Nossa missão é oferecer educação de qualidade que inspire o aprendizado por toda a vida.</p>
+                <div>
+                    <a href="#" class="cta-btn">Conheça Nossos Cursos</a>
+                    <a href="#" class="cta-btn cta-secondary">Entre em Contato</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Features -->
+        <section class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Por que escolher a Escola Novo Saber?</h2>
+                    <p>Oferecemos uma abordagem educacional moderna e completa focada no desenvolvimento integral dos alunos.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-img">Imagem: Professores qualificados</div>
+                        <div class="feature-content">
+                            <h3>Professores Qualificados</h3>
+                            <p>Nossa equipe é formada por profissionais experientes e apaixonados pela educação.</p>
+                            <a href="#" class="feature-link">Conheça nossa equipe →</a>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-img">Imagem: Tecnologia em sala</div>
+                        <div class="feature-content">
+                            <h3>Tecnologia em Sala</h3>
+                            <p>Utilizamos recursos tecnológicos para potencializar o aprendizado dos alunos.</p>
+                            <a href="#" class="feature-link">Saiba mais →</a>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-img">Imagem: Metodologia ativa</div>
+                        <div class="feature-content">
+                            <h3>Metodologia Ativa</h3>
+                            <p>Nossos alunos são protagonistas do próprio aprendizado através de projetos práticos.</p>
+                            <a href="#" class="feature-link">Conheça nossa metodologia →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

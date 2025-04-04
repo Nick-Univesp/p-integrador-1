@@ -1,0 +1,36 @@
+    /* Responsive */
+       @media (max-width: 768px) {
+        .header-content {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .logo {
+            margin-bottom: 15px;
+        }
+        
+        nav ul {
+            margin-bottom: 15px;
+        }
+        
+        .features-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .chat-container {
+            width: 300px;
+            height: 400px;
+            bottom: 70px;
+            right: 0;
+        }
+        
+        .dashboard-cards {
+            grid-template-columns: 1fr;
+        }
+        
+        .timetable th, 
+        .timetable td {
+            padding: 5px;
+            font-size: 12px;
+        }
+    }
