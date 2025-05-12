@@ -1,7 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, Http404, FileResponse
 from mysite.settings import MEDIA_ROOT
-from .models import Sala, Disciplina, Atividade, Classe, Aula
 from django.views import generic
 import os
 
