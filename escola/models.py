@@ -30,21 +30,6 @@ anos = {
 
 
 
-# função por "paulox" (https://www.paulox.net/2023/11/24/database-generated-columns-part-2-django-and-postgresql/#a-calculated-concatenated-field)
-# está função é necessária devido a uma incompatibilidade da função Concat padrão
-class ConcatOp(models.Func):
-    arg_joiner = " || "
-    function = None
-    output_field = models.TextField()
-    template = "%(expressions)s"
-
-#    nome = models.GeneratedField( #deprecated --- remove
-#        expression = ConcatOp('ano', Value(' '), "turma"),
-#        output_field = models.TextField(),
-#        db_persist = True,
-#        )  
-
-
 class Classe(models.Model):
     ano = models.CharField(choices=anos)
     turma = models.CharField(max_length=10)
