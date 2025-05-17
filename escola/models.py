@@ -63,9 +63,6 @@ class Aula(models.Model):
         nome = str(self.disciplina) + ' | ' + str(Classe.objects.get(pk=self.classe_id))
         return nome
 
-# fazer o campo professor ser automatico se o usuario for um professor, mas manual se for um administrador
-# mesmo se aplica para o campo professor no modelo atividade
-
 
 
 class Atividade(models.Model):
