@@ -56,7 +56,8 @@ class Aula(models.Model):
     professor = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        related_name="professor_0"
+        related_name="professor_0",
+        limit_choices_to= Q(is_superuser = True)|Q(groups__name = "Professores")
         )
     info = models.TextField(verbose_name="Informação", blank=True, null=True) 
     def __str__(self):
@@ -94,7 +95,6 @@ class Comunicado(models.Model):
         verbose_name="Remetente",
         editable=False
         )
-    data = models.DateField(auto_now_add=True)
     destinatarios = models.ManyToManyField(
         User,
         related_name="destinatarios_0",
